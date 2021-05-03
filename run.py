@@ -21,7 +21,7 @@ pd.set_option('display.width', 4000)
 
 
 
-patent_data = pd.read_csv('patent_count_datails_priority_year.csv')
+patent_data = pd.read_csv('data/patent_count_datails_priority_year.csv')
 patent_data = patent_data[['patent_number', 'count_inventor_name', 'count_forward_cite_no_family',
                            'count_forward_cite_yes_family', 'count_backward_cite_no_family',
                            'count_backward_cite_yes_family', 'priority_date_year']].head(10)
