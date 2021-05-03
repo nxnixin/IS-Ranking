@@ -1,2 +1,2 @@
 # PatRIS
-To rank solutions inventiveness in patent documents.
+To rank inventive solutions from patent documents.
