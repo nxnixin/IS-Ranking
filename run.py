@@ -15,13 +15,13 @@ from skcriteria.madm import simple, closeness
 import plotly.graph_objects as go
 import numpy as np
 
-# pd.set_option('display.max_rows', 500)  #最大行数
-pd.set_option('display.max_columns', 500)    #最大列数
-pd.set_option('display.width', 4000)        #页面宽度
+# pd.set_option('display.max_rows', 500)  
+pd.set_option('display.max_columns', 500)    
+pd.set_option('display.width', 4000)        
 
 
 
-patent_data = pd.read_csv('/Users/nixin/PycharmProjects/multi_criteria/git_version/data/patent_count_datails_priority_year.csv')
+patent_data = pd.read_csv('patent_count_datails_priority_year.csv')
 patent_data = patent_data[['patent_number', 'count_inventor_name', 'count_forward_cite_no_family',
                            'count_forward_cite_yes_family', 'count_backward_cite_no_family',
                            'count_backward_cite_yes_family', 'priority_date_year']].head(10)
